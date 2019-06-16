@@ -3,10 +3,10 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
         release {
-            storeFile file('C:/MyCode/keystores/com.gmail.alexdoesitright.jks')
-            storePassword 'P@$$w0rd3380'
-            keyAlias 'HazardDiamondJeopardy'
-            keyPassword 'P@$$w0rd3380'
+           
+            
+            
+           
         }
     }
     compileSdkVersion 28
