@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hazard Diamond Jeopardy</string>
+    <string name="action_show_answer">Show Answer</string>
+    <string name="string_front">Front</string>
+</resources>

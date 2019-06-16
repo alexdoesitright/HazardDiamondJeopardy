@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gmail.alexdoesitright.HazardDiamondJeopardy.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/targetLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:padding="1dp"
+                android:text="What hazard does the below diamond warn of?"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/diamond2Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/questionText"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/hazdiamond" />
+
+            <TextView
+                android:id="@+id/tvAnswerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diamond2Image"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="monospace"
+                android:gravity="center_horizontal"
+                android:shadowColor="#000000"
+                android:text="Fire Hazard, Will not burn."
+                android:textColor="#00FF00"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
